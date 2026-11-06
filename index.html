@@ -3,25 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merge Out privacy policy — local review</title>
+  <meta name="description" content="Merge Out privacy policy by Arda Games: local saves, age categories, planned advertising, privacy choices and contact information.">
+  <title>Merge Out Privacy Policy</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;background:#f6f1e5;color:#263a35;font:16px/1.5 system-ui,sans-serif}
-    header{max-width:800px;margin:28px 0;padding:0 20px}h1{font-size:26px;margin:0 0 8px}p{margin:8px 0}
-    a{color:#155c45;text-underline-offset:3px}a:focus-visible{outline:3px solid #155c45;outline-offset:4px}
-    main{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:28px;padding:0 12px 32px}
-    section{background:#fffdf8;border:1px solid #e7dfcf;border-radius:18px;padding:10px;box-shadow:0 10px 28px #263a3510}
-    h2{font-size:15px;margin:4px 0 10px}iframe{display:block;border:0;background:#fbf7ed}
+    :root { color-scheme: light; --ink:#263a35; --muted:#586963; --paper:#fbf7ed; --panel:#fffdf8; --green:#155c45; --line:#e7dfcf; --gold:#ba8d3d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+    header { padding:2.7rem 1.25rem 2.2rem; background:linear-gradient(145deg,#f9f0dc,#fffaf0 65%,#e8f0e7); border-bottom:1px solid var(--line); }
+    .wrap { max-width:780px; margin:0 auto; }
+    .eyebrow { color:var(--green); font-weight:750; letter-spacing:.09em; text-transform:uppercase; font-size:.78rem; }
+    h1 { margin:.4rem 0 .25rem; font-size:clamp(2rem,7vw,3.3rem); line-height:1.1; letter-spacing:-.035em; }
+    .sub { color:var(--muted); margin:.7rem 0 0; }
+    main { padding:1.4rem 1rem 3rem; }
+    article { background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:clamp(1.1rem,4vw,2.1rem); box-shadow:0 12px 32px rgba(49,56,45,.06); }
+    h2 { margin:2rem 0 .45rem; color:var(--green); font-size:1.25rem; line-height:1.3; }
+    h2:first-of-type { margin-top:0; }
+    p,ul { margin:.5rem 0 1rem; }
+    ul { padding-left:1.35rem; }
+    li { margin:.28rem 0; }
+    a { color:#0d624f; text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:focus-visible { outline:3px solid var(--green); outline-offset:4px; border-radius:2px; }
+    .skip { position:absolute; left:1rem; top:-100px; padding:.5rem 1rem; background:var(--panel); }
+    .skip:focus { top:.5rem; }
+    nav { margin:1.2rem 0; display:flex; flex-wrap:wrap; gap:.4rem 1rem; }
+    footer { padding:1.25rem; text-align:center; color:var(--muted); font-size:.9rem; }
+    .small { font-size:.92rem; color:var(--muted); }
+    @media (max-width:480px) { header { padding-top:2rem; } article { border-radius:15px; } }
   </style>
 </head>
 <body>
+  <a class="skip" href="#policy">Skip to policy</a>
   <header>
-    <h1>Merge Out · Privacy policy review</h1>
-    <p>Publication candidate at two phone sizes. Each panel contains the actual HTML page and scrolls independently.</p>
-    <p><a href="../index.html">Open the complete policy in this browser</a> · Local preview only; not published.</p>
+    <div class="wrap">
+      <div class="eyebrow">Merge Out · Privacy</div>
+      <h1>Privacy Policy</h1>
+      <p class="sub">Android puzzle game · Last updated: <time datetime="2026-11-06">6 November 2026</time></p>
+    </div>
   </header>
-  <main>
-    <section><h2>360 × 640 CSS pixels</h2><iframe title="Policy at 360 by 640" src="../index.html" width="360" height="640"></iframe></section>
-    <section><h2>320 × 568 CSS pixels</h2><iframe title="Policy at 320 by 568" src="../index.html" width="320" height="568"></iframe></section>
+  <main class="wrap">
+    <article id="policy">
+      <p>This policy explains how <strong>Merge Out</strong> (the “Game”), an Android puzzle game published by <strong>Arda Games</strong>, handles information. For privacy or support questions, email <a href="mailto:contact.ardagames@gmail.com">contact.ardagames@gmail.com</a>.</p>
+      <p><strong>Current game and planned release:</strong> the current production game stores gameplay progress and preferences locally and does not include Google AdMob, Google UMP or age-category selection. This policy also describes the intended advertising-supported, mixed-age release. Sections marked “planned” describe that future configuration; they do not mean those features or safeguards are already operating in the production game.</p>
+      <nav aria-label="Policy sections"><a href="#local-data">Local data</a><a href="#age">Age groups</a><a href="#advertising">Advertising</a><a href="#choices">Privacy choices</a><a href="#deletion">Deletion</a><a href="#contact">Contact</a></nav>
+
+      <h2 id="local-data">What the Game stores on your device</h2>
+      <p>The Game does not require a user account. It stores gameplay progress and preferences in app-specific storage, including current and completed levels, Daily puzzle progress, selected theme, Sound and Haptics settings, and assistance records. Arda Games does not operate a Merge Out account server or a separate gameplay cloud-save service in the current game.</p>
+      <p>The planned mixed-age release will also save your selected broad age category on the device so you are not repeatedly asked. It does not ask for a name or full date of birth for age selection. Age-related signals used for advertising are explained below.</p>
+      <p><strong>Android backup and device transfer:</strong> local preferences and progress use Unity PlayerPrefs, which on Android uses SharedPreferences and is not encrypted by Unity. The current Android build configuration retains Android’s default backup behavior, and the planned release will keep backup enabled. Android may include progress, preferences and, in the planned release, the saved age category in cloud backup or device transfer, depending on your device and backup settings. Backup can restore data after reinstalling or moving to another device; uninstalling is therefore not a guarantee that every backup copy is deleted. Arda Games does not receive or control your Android backup.</p>
+
+      <h2 id="age">Age categories, children and teens</h2>
+      <p>The intended audience includes ages <strong>9–12</strong>, <strong>13–17</strong> and <strong>18+</strong>. In the planned mixed-age release, a neutral screen offers those three categories and <strong>Prefer not to say</strong>, with no preselected or specially rewarded choice. Choosing not to disclose an age does not restrict access to the puzzles.</p>
+      <p>The selected category is saved locally and may be included in Android backup as described above. When advertising is permitted, the Game uses the category to send Google an age-treatment signal and, where applicable, an under-age-of-consent signal. It does not send a full date of birth as part of this selection. Age selection is separate from advertising consent; choosing “18+” does not grant consent.</p>
+      <ul>
+        <li><strong>Ages 9–12:</strong> the planned release uses Google’s Child age treatment and a maximum ad-content rating of G. Google describes Child treatment as disabling personalized advertising and remarketing, restricting third-party ad-vendor requests, and preventing transmission of the Android Advertising ID. Child-directed ad requests can still involve data needed to deliver ads, protect against fraud and operate the SDK; they are not a promise of anonymous or data-free advertising.</li>
+        <li><strong>Ages 13–17:</strong> the planned release uses Google’s Teen age treatment, which disables personalized advertising and remarketing and applies teen ad-serving protections. Additional under-age-of-consent restrictions apply where required by the user’s region and applicable law.</li>
+        <li><strong>Ages 18+:</strong> the planned release uses the applicable Google UMP consent and privacy-choice process. Ads may be requested only when the returned consent state permits them.</li>
+        <li><strong>Unknown age / Prefer not to say:</strong> gameplay remains available without advertising. The planned policy does not initialize Google Mobile Ads, request ads, start a UMP consent flow, or treat the player as an adult for advertising. The saved choice remains in place on later launches.</li>
+      </ul>
+      <p>The planned flow completes age handling before starting advertising or consent-request flows. A parent or guardian may contact Arda Games about a child’s information or a privacy request. The current Game has no child account, chat or social-profile feature.</p>
+
+      <h2 id="advertising">Advertising and Google Mobile Ads</h2>
+      <p><strong>Planned release:</strong> Merge Out is intended to be free to play and supported only by Google AdMob interstitial advertising through the Google Mobile Ads SDK. The current production game does not yet include this integration. Advertising and age handling have been tested in isolated QA; those tests do not establish that all child-privacy safeguards or release requirements have been verified.</p>
+      <p>For permitted ad requests, Google’s SDK can collect and share the following information, subject to the age protections, consent state and configuration that apply:</p>
+      <ul>
+        <li>IP address, which may be used to estimate general location;</li>
+        <li>device and account identifiers, such as Android Advertising ID or App Set ID, where permitted;</li>
+        <li>product interactions such as app launches, taps, ad impressions, ad clicks, and video views; and</li>
+        <li>diagnostic and performance information such as app launch time, hangs, and energy use.</li>
+      </ul>
+      <p>Google describes these data uses as advertising, analytics and fraud prevention. Age treatment and privacy settings restrict which data and purposes are permitted. Google’s SDK data-disclosure documentation and privacy policies provide more detail. The current Game has no separate game analytics or crash-reporting service enabled; this does not exclude diagnostics collected by Google’s advertising SDK or Android itself.</p>
+      <p>The planned ad placements exclude campaign Levels 1–5, startup, active gameplay and Daily puzzles. After the early levels, interstitial opportunities occur at selected post-completion breaks, approximately every four eligible campaign completions and at least 180 seconds apart. Missing or failed ads do not block progression. The planned release has no banner ads or rewarded ads, including rewarded Hints.</p>
+
+      <h2 id="choices">Consent and privacy choices</h2>
+      <p>The planned ad-enabled release uses Google’s User Messaging Platform (UMP) after age handling to obtain the applicable consent state and show privacy messages where required. The Game requests ads only when UMP reports that an ad request is allowed. If it does not, gameplay continues without an ad request. Age treatment is applied separately and is not replaced by a consent choice.</p>
+      <p>Adults are shown the applicable privacy choices under the configured messages for their region. Selecting an age category does not accept a message on your behalf. Depending on your choices, applicable law and Google’s settings, permitted ads may be personalized, non-personalized or limited. Refusing personalization does not necessarily mean that no ad can be served.</p>
+      <p>A <strong>Privacy choices</strong> entry in Settings will reopen UMP options when required. You can use it to review or change consent, including withdrawing consent where offered. Withdrawal applies to future processing and does not undo processing that was lawful before withdrawal. This control is separate from the <strong>Privacy Policy</strong> link, which opens this document. Android and Google also provide controls for advertising identifiers and ad personalization.</p>
+
+      <h2>Who receives information</h2>
+      <p>Gameplay saves remain in the Game’s app storage unless handled by Android backup or device transfer. In the planned advertising-supported release, Google and its Mobile Ads and UMP services process information for the purposes described above. Google may use service providers or advertising partners and process information in countries other than yours, under its own policies and applicable safeguards. The planned configuration uses Google AdMob without additional mediation partners or mediation SDKs. If additional partners are introduced, their data practices must be disclosed before use.</p>
+      <p>If you email Arda Games, we receive your email address, message and any information you choose to provide. We use that information to respond to support or privacy requests and meet applicable obligations. Email is handled through the email service provider. You do not need to create a Game account to contact us.</p>
+
+      <h2 id="deletion">Retention and deletion</h2>
+      <p>Local progress, settings and the planned age-category record remain until you clear the app’s storage or remove the local app copy. Clearing app storage also removes local gameplay progress and assistance records. Android backup or transfer may retain and restore copies; use the device’s and backup provider’s controls to manage those copies where available. Arda Games does not have access to a publisher-operated copy of your gameplay save.</p>
+      <p>Google determines retention and deletion of data it receives through advertising and consent services under its policies and applicable requirements. Deleting local game data does not automatically delete information already held by Google. Use Google’s privacy controls or the contact routes in Google’s policies for that information.</p>
+      <p>We retain support and privacy correspondence only as long as reasonably needed to handle your inquiry and meet applicable obligations, including legal or security requirements. Because the Game does not create accounts, it has no account-deletion process. You can still contact us to request help with personal information we hold.</p>
+
+      <h2>Your privacy rights</h2>
+      <p>Depending on your location and applicable law, you may have rights to access, correct, delete or obtain a copy of personal information, restrict or object to processing, or withdraw consent. You may also have the right to complain to your local data-protection authority. Contact <a href="mailto:contact.ardagames@gmail.com">contact.ardagames@gmail.com</a> about information held by Arda Games; a parent or guardian may contact us for a child where applicable. We may need reasonable information to verify a request and will respond as required by applicable law.</p>
+      <p>For data held by Google, use Google’s privacy controls and request channels. In the planned release, Settings → Privacy choices provides the applicable UMP controls when required. To remove the locally saved age choice, you can clear app storage, which also removes local progress; a backup restore may restore the prior choice.</p>
+
+      <h2>Third-party policies</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
+        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure for Google Play</a></li>
+        <li><a href="https://developers.google.com/admob/unity/privacy">Google UMP consent and privacy choices</a></li>
+        <li><a href="https://support.google.com/admob/answer/6219315">Google’s Child and Teen age-treatment protections</a></li>
+      </ul>
+
+      <h2>Security</h2>
+      <p>Local information is stored in app-specific Android storage; Unity PlayerPrefs is not encrypted by Unity and should not be treated as secure storage for secrets. Google states that data collected by its Mobile Ads SDK is encrypted in transit using TLS. Android backup protection depends on the device and backup settings. No method of transmission or storage is completely secure.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy when the Game’s features, SDKs, advertising, or legal requirements change. The updated policy will be published on this page with a revised “Last updated” date. We will provide additional notice where required by applicable law.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Publisher: <strong>Arda Games</strong><br>Support and privacy: <a href="mailto:contact.ardagames@gmail.com">contact.ardagames@gmail.com</a><br>Application: <strong>Merge Out for Android</strong></p>
+      <p class="small">This static policy page contains no analytics, advertising scripts, external fonts or tracking cookies added by Arda Games. If hosted through GitHub Pages, GitHub may process technical request information to provide and secure hosting; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    </article>
   </main>
+  <footer><div class="wrap">Merge Out · Arda Games · Privacy Policy</div></footer>
 </body>
 </html>
